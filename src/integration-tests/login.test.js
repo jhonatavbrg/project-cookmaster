@@ -26,7 +26,7 @@ describe('POST /login', () => {
 
     before(async () => {
       response = await chai.request(server).post('/login').send({});
-    })
+    });
 
     it('retorna status "401"', (done) => {
       expect(response).to.have.status(401);
@@ -53,7 +53,7 @@ describe('POST /login', () => {
       await usersCollection.deleteOne({
         email: 'andy@teste.com'
       });
-    })
+    });
 
     it('retorna status "401"', (done) => {
       expect(response).to.have.status(401);
@@ -80,7 +80,7 @@ describe('POST /login', () => {
       await usersCollection.deleteOne({
         email: 'andy@teste.com'
       });
-    })
+    });
 
     it('retorna status "401"', (done) => {
       expect(response).to.have.status(401);
@@ -90,7 +90,7 @@ describe('POST /login', () => {
       expect(response.body.message).to.be.equals('Incorrect username or password');
       done();
     });
-  })
+  });
 
   describe('Valida que é possível fazer login com sucesso', () => {
     let response;
@@ -116,6 +116,6 @@ describe('POST /login', () => {
     it('o corpo da requisição possui a chave "token"', (done) => {
       expect(response.body).to.have.property('token');
       done();
-    })
-  })
-})
+    });
+  });
+});

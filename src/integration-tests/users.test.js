@@ -25,7 +25,7 @@ describe('POST /users', () => {
 
     before(async () => {
       response = await chai.request(server).post('/users').send({});
-    })
+    });
 
     it('retorna status "400"', (done) => {
       expect(response).to.have.status(400);
@@ -34,7 +34,7 @@ describe('POST /users', () => {
     it('"message" tem o valor "Invalid entries. Try again."', (done) => {
       expect(response.body.message).to.be.equals('Invalid entries. Try again.');
       done();
-    })
+    });
   });
 
   describe('Valida se o email já não está registrado', () => {
@@ -52,7 +52,7 @@ describe('POST /users', () => {
       await usersCollection.deleteOne({
         email: 'andy@teste.com'
       });
-    })
+    });
 
     it('retorna status "409"', (done) => {
       expect(response).to.have.status(409);
@@ -61,7 +61,7 @@ describe('POST /users', () => {
     it('"message" tem o valor "Email already registered"', (done) => {
       expect(response.body.message).to.be.equals('Email already registered');
       done();
-    })
+    });
   });
 
   describe('Valida que é possível cadastrar usuário com sucesso', () => {
@@ -86,6 +86,6 @@ describe('POST /users', () => {
 
     it('retorna o objeto "user"', () => {
       expect(response.body.user).to.have.all.keys(['name', 'email', 'role', '_id']);
-    })
-  })
-})
+    });
+  });
+});
