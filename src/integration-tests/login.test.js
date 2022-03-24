@@ -51,7 +51,7 @@ describe('POST /login', () => {
     after(async () => {
       const usersCollection = connectionMock.db('Cookmaster').collection('users');
       await usersCollection.deleteOne({
-        email: 'andy@teste.com'
+        email: 'chad@teste.com'
       });
     });
 
@@ -78,7 +78,7 @@ describe('POST /login', () => {
     after(async () => {
       const usersCollection = connectionMock.db('Cookmaster').collection('users');
       await usersCollection.deleteOne({
-        email: 'andy@teste.com'
+        email: 'chad@teste.com'
       });
     });
 
@@ -105,7 +105,7 @@ describe('POST /login', () => {
     after(async () => {
       const usersCollection = connectionMock.db('Cookmaster').collection('users');
       await usersCollection.deleteOne({
-        email: 'andy@teste.com'
+        email: 'chad@teste.com'
       });
     });
 

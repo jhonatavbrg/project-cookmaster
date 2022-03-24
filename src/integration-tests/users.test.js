@@ -50,7 +50,7 @@ describe('POST /users', () => {
     after(async () => {
       const usersCollection = connectionMock.db('Cookmaster').collection('users');
       await usersCollection.deleteOne({
-        email: 'andy@teste.com'
+        email: 'chad@teste.com'
       });
     });
 
@@ -75,7 +75,7 @@ describe('POST /users', () => {
     after(async () => {
       const usersCollection = connectionMock.db('Cookmaster').collection('users');
       await usersCollection.deleteOne({
-        email: 'andy@teste.com'
+        email: 'chad@teste.com'
       });
     })
 

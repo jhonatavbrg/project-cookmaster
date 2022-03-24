@@ -41,7 +41,7 @@ describe('POST /recipes', () => {
     after(async () => {
       const usersCollection = connectionMock.db('Cookmaster').collection('users');
       await usersCollection.deleteOne({
-        email: 'andy@teste.com'
+        email: 'chad@teste.com'
       });
     });
 
@@ -69,7 +69,7 @@ describe('POST /recipes', () => {
     after(async () => {
       const usersCollection = connectionMock.db('Cookmaster').collection('users');
       await usersCollection.deleteOne({
-        email: 'andy@teste.com'
+        email: 'chad@teste.com'
       });
     });
 
@@ -99,7 +99,7 @@ describe('POST /recipes', () => {
     after(async () => {
       const usersCollection = connectionMock.db('Cookmaster').collection('users');
       await usersCollection.deleteOne({
-        email: 'andy@teste.com'
+        email: 'chad@teste.com'
       });
     });
 
@@ -144,7 +144,7 @@ describe('GET /recipes', () => {
     after(async () => {
       const usersCollection = connectionMock.db('Cookmaster').collection('users');
       await usersCollection.deleteOne({
-        email: 'andy@teste.com'
+        email: 'chad@teste.com'
       });
     });
 
@@ -177,7 +177,7 @@ describe('GET /recipes', () => {
     after(async () => {
       const usersCollection = connectionMock.db('Cookmaster').collection('users');
       await usersCollection.deleteOne({
-        email: 'andy@teste.com'
+        email: 'chad@teste.com'
       });
     });
 
@@ -221,7 +221,7 @@ describe('GET /recipes/:id', () => {
     after(async () => {
       const usersCollection = connectionMock.db('Cookmaster').collection('users');
       await usersCollection.deleteOne({
-        email: 'andy@teste.com'
+        email: 'chad@teste.com'
       });
     });
 
@@ -254,7 +254,7 @@ describe('GET /recipes/:id', () => {
     after(async () => {
       const usersCollection = connectionMock.db('Cookmaster').collection('users');
       await usersCollection.deleteOne({
-        email: 'andy@teste.com'
+        email: 'chad@teste.com'
       });
     });
 
@@ -284,7 +284,7 @@ describe('GET /recipes/:id', () => {
     after(async () => {
       const usersCollection = connectionMock.db('Cookmaster').collection('users');
       await usersCollection.deleteOne({
-        email: 'andy@teste.com'
+        email: 'chad@teste.com'
       });
     });
 
@@ -329,7 +329,7 @@ describe('PUT /recipes/:id', () => {
     after(async () => {
       const usersCollection = connectionMock.db('Cookmaster').collection('users');
       await usersCollection.deleteOne({
-        email: 'andy@teste.com'
+        email: 'chad@teste.com'
       });
     });
 
@@ -362,7 +362,7 @@ describe('PUT /recipes/:id', () => {
     after(async () => {
       const usersCollection = connectionMock.db('Cookmaster').collection('users');
       await usersCollection.deleteOne({
-        email: 'andy@teste.com'
+        email: 'chad@teste.com'
       });
     });
 
@@ -395,7 +395,7 @@ describe('PUT /recipes/:id', () => {
     after(async () => {
       const usersCollection = connectionMock.db('Cookmaster').collection('users');
       await usersCollection.deleteOne({
-        email: 'andy@teste.com'
+        email: 'chad@teste.com'
       });
     });
 
@@ -476,7 +476,7 @@ describe('DELETE /recipes/:id', () => {
     after(async () => {
       const usersCollection = connectionMock.db('Cookmaster').collection('users');
       await usersCollection.deleteOne({
-        email: 'andy@teste.com'
+        email: 'chad@teste.com'
       });
     });
 
@@ -509,7 +509,7 @@ describe('DELETE /recipes/:id', () => {
     after(async () => {
       const usersCollection = connectionMock.db('Cookmaster').collection('users');
       await usersCollection.deleteOne({
-        email: 'andy@teste.com'
+        email: 'chad@teste.com'
       });
     });
 

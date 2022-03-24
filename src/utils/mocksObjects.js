@@ -1,46 +1,46 @@
 const userObj = {
-  name: 'Andy Silva',
-  email: 'andy@teste.com',
-  password: 'senhaSuperSecretaAndy',
+  name: 'Chad Silva',
+  email: 'chad@teste.com',
+  password: 'secret123',
 };
 
 const adminObj = {
-  name: 'Andy admin',
-  email: 'andyAdmin@teste.com',
-  password: 'senhaSuperSecretaAndyAdmin',
+  name: 'chad admin',
+  email: 'chadAdmin@teste.com',
+  password: 'secret123',
   role: 'admin',
 };
 
 const emailError = {
-  email: 'and@teste.com',
-  password: 'senhaSuperSecretaAndy',
+  email: 'chad@teste.com',
+  password: 'secret123',
 };
 
 const passwordError = {
-  email: 'andy@teste.com',
-  password: 'senhaSuperSecreta',
+  email: 'chad@teste.com',
+  password: 'secret123',
 };
 
 const correctLogin = {
-  email: 'andy@teste.com',
-  password: 'senhaSuperSecretaAndy',
+  email: 'chad@teste.com',
+  password: 'secret123',
 };
 
 const correctLoginAdmin = {
-  email: 'andyAdmin@teste.com',
-  password: 'senhaSuperSecretaAndyAdmin',
+  email: 'chadAdmin@teste.com',
+  password: 'secret123',
 };
 
 const recipeObj = {
-  name: 'Bolo de chocolate',
-  ingredients: 'Trigo, chocolate, ovo, manteiga',
-  preparation: '10 min no forno',
+  name: 'Torta de Manteiga Escocesa',
+  ingredients: 'Farinha, Acucar, Chocolate, Ovo, Manteiga',
+  preparation: '15 min no forno, pre-aquecido',
 };
 
 const recipeObjModify = {
   name: 'Bolo de morango',
-  ingredients: 'Trigo, morango, ovo, manteiga',
-  preparation: '10 min no forno',
+  ingredients: 'Farinha, Acucar, Morango, Ovo, Manteiga',
+  preparation: '10 min no forno, pre-aquecido',
 };
 
 module.exports = {

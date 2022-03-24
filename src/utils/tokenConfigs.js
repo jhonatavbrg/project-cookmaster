@@ -1,4 +1,4 @@
-const secret = 'senhaSecretaDoAndy';
+const secret = 'secret123';
 const jwtConfig = {
   expiresIn: '30m',
   algorithm: 'HS256',
